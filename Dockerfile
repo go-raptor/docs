@@ -1,12 +1,12 @@
-FROM oven/bun:latest as build
+FROM node:latest as build
 
 WORKDIR /raptordocs
 
 COPY . .
 
-RUN bun install
+RUN npm install
 
-RUN bun run build
+RUN npm run build
 
 FROM nginx:alpine as release
 
