@@ -10,4 +10,4 @@ RUN bun run build
 
 FROM nginx:alpine as release
 
-COPY --from=build /raptordocs/build/ /usr/share/nginx/html
+COPY --from=build /build/ /usr/share/nginx/html
