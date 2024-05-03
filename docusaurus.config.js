@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Raptor',
-  tagline: 'Go MVC web development eco-system',
+  tagline: 'Go MVCS web development eco-system',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -78,8 +78,9 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/go-raptor',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,7 +93,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Guide',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
@@ -118,13 +119,17 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/go-raptor',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Krunoslav Husak. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Krunoslav Husak, built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
